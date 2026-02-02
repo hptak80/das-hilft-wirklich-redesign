@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Das hilft wirklich ✓ Ehrliche Produkttests seit 2013 | Wissenschaftlich fundiert</title>
+    <meta name="description" content="Unabhängige Langzeit-Tests von Gesundheitsprodukten. Wissenschaftlich fundiert, selbst getestet, ehrlich bewertet. Seit 2013. ➤ Jetzt lesen!">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #2563EB;
+            --accent: #10B981;
+            --text: #1F2937;
+            --text-light: #6B7280;
+            --bg: #FFFFFF;
+            --bg-light: #F9FAFB;
+            --border: #E5E7EB;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            color: var(--text);
+            line-height: 1.6;
+            background: var(--bg);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: var(--bg);
+            border-bottom: 1px solid var(--border);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        nav a {
+            margin-left: 2rem;
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, #2563EB 0%, #1E40AF 100%);
+            color: white;
+            padding: 6rem 0 4rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            opacity: 0.95;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            backdrop-filter: blur(10px);
+        }
+
+        /* Introduction */
+        .intro {
+            padding: 5rem 0;
+            background: var(--bg);
+        }
+
+        .intro h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: var(--text);
+        }
+
+        .intro-content {
+            font-size: 1.125rem;
+            line-height: 1.8;
+            color: var(--text);
+        }
+
+        .intro-content strong {
+            color: var(--primary);
+        }
+
+        .why-different {
+            background: var(--bg-light);
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            border-left: 4px solid var(--primary);
+        }
+
+        .why-different h3 {
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .why-different ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .why-different li {
+            margin-bottom: 0.75rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .why-different li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        /* USPs */
+        .usps {
+            padding: 5rem 0;
+            background: var(--bg-light);
+        }
+
+        .usps h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 4rem;
+        }
+
+        .usp-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+        }
+
+        .usp-card {
+            text-align: center;
+            padding: 2rem;
+            background: var(--bg);
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .usp-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+        }
+
+        .usp-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .usp-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        /* Trust Section */
+        .trust {
+            padding: 5rem 0;
+            background: var(--bg);
+            text-align: center;
+        }
+
+        .trust h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .trust-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .stat {
+            padding: 2rem;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: var(--text-light);
+            font-size: 1.125rem;
+        }
+
+        /* FAQ */
+        .faq {
+            padding: 5rem 0;
+            background: var(--bg-light);
+        }
+
+        .faq h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .faq-item {
+            background: var(--bg);
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .faq-question {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .faq-answer {
+            color: var(--text);
+            line-height: 1.8;
+        }
+
+        /* CTA */
+        .cta {
+            background: linear-gradient(135deg, #2563EB 0%, #1E40AF 100%);
+            color: white;
+            padding: 5rem 0;
+            text-align: center;
+        }
+
+        .cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 1rem 3rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.125rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--text);
+            color: white;
+            padding: 3rem 0 1.5rem;
+        }
+
+        .footer-content {
+            text-align: center;
+            opacity: 0.8;
+        }
+
+        .footer-links {
+            margin: 1.5rem 0;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+
+        .footer-links a:hover {
+            opacity: 1;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            nav {
+                display: none;
+            }
+
+            .intro h2, .usps h2, .trust h2, .faq h2, .cta h2 {
+                font-size: 1.75rem;
+            }
+
+            .usp-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Das hilft wirklich</div>
+                <nav>
+                    <a href="#tests">Tests</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="#kontakt">Kontakt</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="badge">⭐ Seit 2013 vertrauenswürdig</div>
+            <h1>Das hilft wirklich – Ehrliche Produkttests & Erfahrungsberichte</h1>
+            <p>Unabhängige Tests, echte Erfahrungen, wissenschaftlich fundiert. Wir testen selbst – seit 2013.</p>
+        </div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="intro">
+        <div class="container">
+            <h2>Gesundheitsprodukte im Test – Ehrlich, wissenschaftlich, selbst getestet</h2>
+            
+            <div class="intro-content">
+                <p>Willkommen bei Das-hilft-wirklich.de – Ihrer unabhängigen Anlaufstelle für ehrliche Produkttests im Gesundheitsbereich. Seit 2013 testen wir Gesundheitsprodukte, Nahrungsergänzungsmittel und Medizinprodukte selbst – über Wochen und Monate, nicht nur oberflächlich.</p>
+
+                <div class="why-different">
+                    <h3>Warum wir anders sind:</h3>
+                    <ul>
+                        <li><strong>Langzeit-Tests:</strong> Wir nutzen Produkte 3-12 Monate selbst</li>
+                        <li><strong>Wissenschaftlich fundiert:</strong> Jeder Test basiert auf aktuellen Studien</li>
+                        <li><strong>Dokumentiert:</strong> Vorher-Nachher-Messungen, Fotos, Erfahrungsberichte</li>
+                        <li><strong>Unabhängig:</strong> Keine gekauften Bewertungen, nur ehrliche Meinungen</li>
+                    </ul>
+                </div>
+
+                <p><strong>Unser Fokus:</strong> Produkte, die messbare Ergebnisse liefern – oder eben nicht. Wir sagen dir, was wirklich hilft und was rausgeschmissenes Geld ist.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- USPs -->
+    <section class="usps">
+        <div class="container">
+            <h2>Was uns auszeichnet</h2>
+            
+            <div class="usp-grid">
+                <div class="usp-card">
+                    <div class="usp-icon">🔬</div>
+                    <h3>Echte Langzeit-Tests</h3>
+                    <p>Wir testen selbst – nicht nur 2 Wochen, sondern monatelang. Mit dokumentierten Ergebnissen, Messungen und Fotos.</p>
+                </div>
+
+                <div class="usp-card">
+                    <div class="usp-icon">📊</div>
+                    <h3>Wissenschaftlich fundiert</h3>
+                    <p>Jeder Test wird durch aktuelle Studien aus 2024/2025 untermauert. Wir zitieren echte Forschung, keine Marketing-Phrasen.</p>
+                </div>
+
+                <div class="usp-card">
+                    <div class="usp-icon">💯</div>
+                    <h3>100% Ehrlich & Unabhängig</h3>
+                    <p>Keine gekauften Bewertungen. Wir sagen auch, wenn ein Produkt NICHT funktioniert. Transparenz ist unser oberstes Gebot.</p>
+                </div>
+
+                <div class="usp-card">
+                    <div class="usp-icon">🏆</div>
+                    <h3>Seit 2013 am Markt</h3>
+                    <p>Über 10 Jahre Erfahrung mit Gesundheitsprodukten. Hunderte Tests, Tausende zufriedene Leser.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust -->
+    <section class="trust">
+        <div class="container">
+            <h2>Warum uns vertrauen?</h2>
+            <p>Seit 2013 testen wir Gesundheitsprodukte selbst – ehrlich, unabhängig und mit wissenschaftlichem Anspruch.</p>
+            
+            <div class="trust-stats">
+                <div class="stat">
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">Jahre Erfahrung</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">97%</div>
+                    <div class="stat-label">Positive Rückmeldungen</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Echte Selbsttests</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2>Häufig gestellte Fragen (FAQ)</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">Sind eure Tests wirklich unabhängig?</div>
+                <div class="faq-answer">Ja! Wir kaufen Produkte selbst oder erhalten sie direkt vom Hersteller zum Test – ohne Verpflichtung zu positiven Bewertungen. Unsere Meinung ist nicht käuflich.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Wie lange dauern eure Tests?</div>
+                <div class="faq-answer">Mindestens 4 Wochen, oft 3-6 Monate. Bei Produkten wie Phallosan oder Penimaster sogar über ein Jahr, um Langzeiteffekte zu dokumentieren.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Verdient ihr an den Empfehlungen?</div>
+                <div class="faq-answer">Ja, über Affiliate-Links erhalten wir eine kleine Provision bei Käufen. Das kostet dich nichts extra und ermöglicht uns, weiter unabhängig zu testen.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Welche Produkte testet ihr?</div>
+                <div class="faq-answer">Schwerpunkt: Gesundheitsprodukte, Nahrungsergänzungsmittel, Medizinprodukte (z.B. Penisvergrößerung, Potenzmittel, Hausmittel, Fitness-Produkte).</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Kann ich selbst Produkte vorschlagen?</div>
+                <div class="faq-answer">Ja! Schreib uns eine E-Mail mit deinem Vorschlag. Wir prüfen, ob ein Test sinnvoll ist.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="container">
+            <h2>Bereit für ehrliche Produkttests?</h2>
+            <p style="margin-bottom: 2rem; opacity: 0.95;">Entdecke unsere beliebtesten Testberichte und finde heraus, was wirklich hilft.</p>
+            <a href="#tests" class="cta-button">Zu den Tests</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="#">Impressum</a>
+                    <a href="#">Datenschutz</a>
+                    <a href="#">Kontakt</a>
+                </div>
+                <p>© 2026 Das hilft wirklich. Alle Rechte vorbehalten.</p>
+                <p style="font-size: 0.875rem; margin-top: 1rem;">Diese Seite enthält Affiliate-Links. Bei Käufen über diese Links erhalten wir eine Provision – für dich entstehen keine Mehrkosten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Das hilft wirklich",
+      "url": "https://das-hilft-wirklich.de",
+      "description": "Unabhängige Produkttests im Gesundheitsbereich seit 2013",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Das hilft wirklich",
+        "foundingDate": "2013"
+      }
+    }
+    </script>
+</body>
+</html>
